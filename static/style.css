@@ -1,0 +1,78 @@
+:root {
+  --bg: #f4f6f9;
+  --card: #ffffff;
+  --text: #1c2430;
+  --muted: #667085;
+  --border: #dde3ea;
+  --accent: #1d5fa8;
+  --danger: #b42318;
+  --danger-bg: #fef3f2;
+  --warn-bg: #fffaeb;
+}
+* { box-sizing: border-box; }
+body { margin: 0; font-family: "Segoe UI", system-ui, sans-serif; background: var(--bg); color: var(--text); font-size: 15px; }
+h1 { margin: 0; font-size: 1.35rem; }
+h2 { margin: 0 0 14px; font-size: 1.05rem; }
+h3 { margin: 0 0 10px; font-size: 0.98rem; }
+.muted, small { color: var(--muted); }
+
+.topbar { display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap;
+  padding: 16px 24px; background: var(--card); border-bottom: 1px solid var(--border); }
+.sub { margin: 4px 0 0; color: var(--muted); font-size: 0.85rem; }
+.status { font-size: 0.85rem; padding: 6px 12px; border-radius: 999px; background: var(--bg); border: 1px solid var(--border); }
+.status.ok { border-color: #a6d8b8; background: #ecfdf3; }
+.status.off { border-color: #fedf89; background: var(--warn-bg); }
+
+.layout { display: grid; grid-template-columns: 380px 1fr; gap: 20px; padding: 20px 24px; align-items: start; }
+@media (max-width: 900px) { .layout { grid-template-columns: 1fr; padding: 16px; } }
+
+.card { background: var(--card); border: 1px solid var(--border); border-radius: 10px; padding: 18px; }
+.form { position: sticky; top: 16px; }
+.field { display: flex; flex-direction: column; gap: 5px; margin-bottom: 12px; }
+.field span { font-weight: 600; font-size: 0.88rem; }
+input, textarea, select { font: inherit; padding: 8px 10px; border: 1px solid var(--border); border-radius: 6px; width: 100%; background: #fff; }
+textarea { resize: vertical; }
+.row { display: grid; grid-template-columns: 70px 1fr 1fr; gap: 8px; }
+.check { display: flex; gap: 8px; align-items: center; margin: 6px 0; font-size: 0.9rem; }
+.check input { width: auto; }
+.flags { border: 1px solid var(--border); border-radius: 6px; margin: 10px 0 12px; padding: 6px 12px 8px; }
+.flags legend { font-weight: 600; font-size: 0.88rem; padding: 0 4px; }
+button { width: 100%; padding: 11px; font: inherit; font-weight: 600; color: #fff; background: var(--accent); border: 0; border-radius: 6px; cursor: pointer; }
+button:disabled { opacity: 0.6; cursor: wait; }
+.error { color: var(--danger); font-size: 0.9rem; }
+
+.drop { display: block; border: 2px dashed var(--border); border-radius: 8px; padding: 22px 14px; text-align: center; cursor: pointer; margin-bottom: 12px; }
+.drop:hover { border-color: var(--accent); }
+.drop input { margin-bottom: 8px; }
+.drop span { display: block; color: var(--muted); font-size: 0.88rem; }
+.thumbs { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 12px; }
+.thumbs img { width: 64px; height: 64px; object-fit: cover; border-radius: 4px; background: #000; }
+.vision-imgs { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 10px; }
+.vision-imgs img { width: 140px; border-radius: 6px; background: #000; }
+
+.results { display: flex; flex-direction: column; gap: 16px; min-width: 0; }
+.empty { text-align: center; padding: 48px 18px; }
+.banner { padding: 14px 18px; border-radius: 10px; border: 1px solid; }
+.banner.danger { background: var(--danger-bg); border-color: #fda29b; color: var(--danger); }
+.banner.warn { background: var(--warn-bg); border-color: #fedf89; }
+
+.summary { line-height: 1.55; }
+.summary ul { margin: 4px 0 10px; padding-left: 20px; }
+.summary p { margin: 6px 0; }
+
+.grid-table { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
+.grid-table th, .grid-table td { border: 1px solid var(--border); padding: 7px 6px; text-align: center; }
+.grid-table th:first-child, .grid-table td:first-child { text-align: left; }
+.grid-table td.cell { font-weight: 600; }
+.table-wrap { overflow-x: auto; }
+.legend { margin-top: 8px; font-size: 0.8rem; color: var(--muted); }
+
+.images { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 14px; }
+.images figure { margin: 0; }
+.images img { width: 100%; border-radius: 6px; background: #000; display: block; }
+.images figcaption { font-size: 0.82rem; margin-top: 6px; }
+
+.guides { margin: 0; padding-left: 18px; font-size: 0.85rem; }
+.guides li { margin-bottom: 6px; }
+.guides b { color: var(--accent); }
+details summary { cursor: pointer; font-weight: 600; }

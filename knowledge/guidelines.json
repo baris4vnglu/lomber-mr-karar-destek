@@ -1,0 +1,68 @@
+[
+  {
+    "id": "RED-FLAG-CES",
+    "tags": ["red_flag"],
+    "source": "NICE NG59 (2016, güncelleme 2020) – Low back pain and sciatica in over 16s; kauda ekuina sendromu uyarısı",
+    "text": "İdrar retansiyonu/inkontinansı, gaita inkontinansı, eyer anestezisi veya ilerleyici motor kayıp kauda ekuina sendromunu düşündürür. Bu durumda konservatif tedavi beklenmez; acil spinal cerrahi değerlendirmesi ve acil MR gerekir."
+  },
+  {
+    "id": "RED-FLAG-SERIOUS",
+    "tags": ["red_flag"],
+    "source": "NICE NG59 – ciddi altta yatan patoloji dışlama",
+    "text": "Ateş, açıklanamayan kilo kaybı, kanser öyküsü, travma veya immünsüpresyon varlığında enfeksiyon, malignite veya kırık gibi ciddi nedenler öncelikle dışlanmalıdır."
+  },
+  {
+    "id": "NICE-SELF-MGMT",
+    "tags": ["conservative"],
+    "source": "NICE NG59 – kendi kendine yönetim",
+    "text": "Bel ağrısı ve siyatikte hastaya durumun doğası hakkında bilgi verilmesi, aktif kalmanın ve normal günlük aktivitelere devam etmenin desteklenmesi önerilir."
+  },
+  {
+    "id": "NICE-EXERCISE",
+    "tags": ["conservative", "physio"],
+    "source": "NICE NG59 – egzersiz ve manuel terapi",
+    "text": "Grup egzersiz programı (biyomekanik, aerobik, zihin-beden veya kombinasyon) düşünülmelidir. Manuel terapi (manipülasyon, mobilizasyon, yumuşak doku teknikleri) yalnızca egzersizi de içeren bir tedavi paketinin parçası olarak düşünülmelidir."
+  },
+  {
+    "id": "NICE-NSAID",
+    "tags": ["conservative", "pharma"],
+    "source": "NICE NG59 – farmakolojik tedavi",
+    "text": "Bel ağrısında oral NSAİİ, gastrointestinal, renal ve kardiyovasküler risk ile yaş dikkate alınarak, en düşük etkili dozda ve en kısa süreyle düşünülebilir; gastroprotektif tedavi değerlendirilmelidir. Parasetamol tek başına önerilmez."
+  },
+  {
+    "id": "NICE-SCIATICA-AVOID",
+    "tags": ["radiculopathy", "pharma"],
+    "source": "NICE NG59 / NICE CG173 (nöropatik ağrı)",
+    "text": "Siyatik tedavisinde gabapentinoidler, diğer antiepileptikler, oral kortikosteroidler ve benzodiazepinler önerilmez; kronik siyatikte opioid önerilmez. Nöropatik ağrı tedavisi gerekiyorsa nöropatik ağrı kılavuzuna (CG173) göre değerlendirilebilir."
+  },
+  {
+    "id": "NICE-EPIDURAL",
+    "tags": ["radiculopathy", "interventional"],
+    "source": "NICE NG59 – epidural enjeksiyon",
+    "text": "Akut ve şiddetli siyatikte epidural lokal anestezik ve steroid enjeksiyonu düşünülebilir. Nörojenik kladikasyonu olan spinal stenoz hastalarında epidural enjeksiyon önerilmez."
+  },
+  {
+    "id": "NICE-DECOMPRESSION",
+    "tags": ["radiculopathy", "surgical"],
+    "source": "NICE NG59 – spinal dekompresyon",
+    "text": "Konservatif tedaviye rağmen ağrısı veya fonksiyon kaybı düzelmeyen ve radyolojik bulguları semptomlarıyla uyumlu siyatik hastalarında spinal dekompresyon düşünülebilir."
+  },
+  {
+    "id": "NASS-LDH",
+    "tags": ["radiculopathy", "surgical"],
+    "source": "NASS (2012) – Lomber disk herniasyonuna bağlı radikülopati klinik kılavuzu",
+    "text": "Disk herniasyonuna bağlı radikülopatide doğal seyir çoğu hastada olumludur. Semptomları cerrahi gerektirecek düzeydeki hastalarda diskektomi, konservatif tedaviye göre daha hızlı semptom iyileşmesi sağlayabilir."
+  },
+  {
+    "id": "NASS-LSS",
+    "tags": ["stenosis", "surgical"],
+    "source": "NASS (2011) – Dejeneratif lomber spinal stenoz klinik kılavuzu",
+    "text": "Hafif-orta semptomlu dejeneratif lomber stenozda doğal seyir birçok hastada stabil kalır. Orta-ağır semptomları olan hastalarda dekompresif cerrahi düşünülebilir."
+  },
+  {
+    "id": "IMAGING-CORRELATION",
+    "tags": ["general"],
+    "source": "Genel klinik ilke (NICE NG59 görüntüleme bölümü)",
+    "text": "Görüntüleme bulguları asemptomatik bireylerde de sık görülür. Tedavi kararı MR bulgusuna değil, klinik tablo ile görüntüleme bulgularının uyumuna göre verilmelidir."
+  }
+]

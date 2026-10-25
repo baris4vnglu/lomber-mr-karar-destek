@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Model files (büyük dosyalar)
+models/*.pth
+models/*.pt
+models/*.h5
+models/*.onnx
+
+# Log dosyaları
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# Test verileri (büyük ZIP/DICOM dosyaları)
+*.dcm
+*.zip

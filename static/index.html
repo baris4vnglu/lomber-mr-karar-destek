@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lomber MR Karar Destek</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<header class="topbar">
+  <div>
+    <h1>Lomber MR Karar Destek</h1>
+    <p class="sub">Hekim için deneysel karar destek aracı · araştırma amaçlıdır, klinik kararın yerine geçmez</p>
+  </div>
+</header>
+
+<main class="layout">
+  <!-- method=post + inline guard: data must never land in the URL, even if app.js fails to load -->
+  <form id="form" class="card form" method="post" action="#" onsubmit="return false">
+    <h2>MR resmi yükle</h2>
+    <label class="drop">
+      <input id="images" type="file" name="images" accept="image/jpeg,image/png" multiple>
+      <span>Bel MR resimlerini seçin (JPG/PNG, en fazla 4)</span>
+    </label>
+    <div id="thumbs" class="thumbs"></div>
+    <button id="submit" type="submit">Analiz et</button>
+    <p id="error" class="error" hidden></p>
+  </form>
+
+  <section id="results" class="results">
+    <div class="card empty">
+      <p>Sonuçlar burada görünecek.</p>
+      <p class="muted">Resim yükleyip <b>Analiz et</b>'e basın. Analiz 1-3 dakika sürebilir.</p>
+    </div>
+  </section>
+</main>
+
+<script src="/static/app.js"></script>
+</body>
+</html>
